@@ -1,0 +1,13 @@
+{
+  "User": {
+    "Id": 2181595,
+    "Username": "eymansafi",
+    "Name": "eymen safi",
+    "Email": "aymansafi.r9@gmail.com",
+    "AvatarUrl": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/2181595/avatar.png",
+    "PrivateToken": "05749fd30663b89419414041508a837c32b1cd48fa84261986dbe148d3e595c6",
+    "Host": "https://gitlab.com",
+    "TwoFactorEnabled": false,
+    "ApiVersion": 3
+  }
+}
