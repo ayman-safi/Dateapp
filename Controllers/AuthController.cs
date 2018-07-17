@@ -37,7 +37,7 @@ namespace DatingApp.api.Controllers {
 
 
 
-            var userToCreate = new Users {
+            var userToCreate = new User {
                 Username = userForRegisterDto.Username 
             } ;
 
@@ -62,7 +62,7 @@ namespace DatingApp.api.Controllers {
                     new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
                     new Claim(ClaimTypes.Name, userFromRepo.Username)
                 }),
-                Expires = DateTime.Now.AddMinutes(1),
+                Expires = DateTime.Now.AddMinutes(10),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                 SecurityAlgorithms.HmacSha512Signature)
             };

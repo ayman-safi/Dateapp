@@ -8,9 +8,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.api.Controllers {
-    [Authorize]
+
     [Route ("api/[controller]")]
-    public class ValuesController : Controller {
+    public class ValuesController : Controller 
+    {
         private readonly DataContext _context;
         public ValuesController (DataContext context) {
             _context = context;

@@ -10,7 +10,7 @@ using System;
 namespace DatingApp.api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180707112343_AddedUserModel")]
+    [Migration("20180716085336_AddedUserModel")]
     partial class AddedUserModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,7 +19,7 @@ namespace DatingApp.api.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026");
 
-            modelBuilder.Entity("DatingApp.api.Models.Users", b =>
+            modelBuilder.Entity("DatingApp.api.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
